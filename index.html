@@ -1,0 +1,255 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wedding invitation</title>
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Styles/styles.css" />
+  <style>
+  
+  
+  .video-toggle {
+    position: fixed;
+    top: 35%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .video-toggle button {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    /* padding: 8px; */
+    font-size: 16px;
+    color: white;
+    border: 2px solid;
+    border-color: #8e44ad;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  /* .video-toggle button:hover {
+    background-color: #732d91;
+  } */
+  </style>
+</head>
+<body>
+  
+  <canvas id="fireworksCanvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></canvas>
+  <div  class="invitation-container">
+    <h1 class="fade-slide" style="margin: 8px auto;">You're invited to our wedding!</h1>
+<!-- ------------------------------------------------------------ -->
+  
+    <div class="circle-video-container">
+      <video id="weddingVideo" autoplay loop playsinline mut >
+        <source src="assets/video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+   
+    </div>
+    <div class="video-toggle">
+      <button onclick="toggleVideo()"><i class="fa-solid fa-repeat spiner"></i></button>
+    </div>
+  
+    <p class="fade-slide" style="color: white; margin-top: 5px;">The Wedding of</p>
+    <h2 class="fade-slide" style="margin: 15px;">Ahmed & Fatma</h2>
+    <p class="fade-slide" style="color: white;">في 19 أكتوبر 2025 - الساعة 7 مساءً</p>
+    <p class="fade-slide" style="color: white; display: flex; align-items: center; justify-content: center;"> 
+      
+      <span style="margin: 0px 7px;">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#e91e63" height="30px" width="30px" version="1.1" id="Capa_1" viewBox="0 0 394.48 394.48" xml:space="preserve">
+          <g>
+            <g>
+              <path d="M386.98,223.061h-80.5v-57c0-4.142-3.358-7.5-7.5-7.5h-9.493c0,0,0.013-27.381-0.002-27.571    c-0.296-48.079-37.563-87.549-84.744-91.363V21.43c0-4.142-3.358-7.5-7.5-7.5s-7.5,3.358-7.5,7.5v18.195    c-47.37,3.83-84.746,43.6-84.746,91.939v26.995H95.5c-4.142,0-7.5,3.358-7.5,7.5v57H7.5c-4.142,0-7.5,3.358-7.5,7.5v142.49    c0,4.142,3.358,7.5,7.5,7.5h379.48c4.142,0,7.5-3.358,7.5-7.5V230.561C394.48,226.419,391.122,223.061,386.98,223.061z     M197.241,54.319c40.064,0,73.102,30.658,76.885,69.746h-153.77C124.139,84.977,157.177,54.319,197.241,54.319z M119.995,139.065    h154.492v19.495h-10.246v-8.63c0-4.142-3.358-7.5-7.5-7.5s-7.5,3.358-7.5,7.5v8.63h-8.8v-8.63c0-4.142-3.358-7.5-7.5-7.5    s-7.5,3.358-7.5,7.5v8.63h-8.8v-8.63c0-4.142-3.358-7.5-7.5-7.5s-7.5,3.358-7.5,7.5v8.63h-8.8v-8.63c0-4.142-3.358-7.5-7.5-7.5    s-7.5,3.358-7.5,7.5v8.63h-8.8v-8.63c0-4.142-3.358-7.5-7.5-7.5s-7.5,3.358-7.5,7.5v8.63h-8.8v-8.63c0-4.142-3.358-7.5-7.5-7.5    s-7.5,3.358-7.5,7.5v8.63h-10.246L119.995,139.065L119.995,139.065z M103,173.561h188.48v49.5H280.1v-1.63    c0-3.329-2.194-6.26-5.389-7.197l-75-22c-1.378-0.404-2.844-0.404-4.222,0l-75,22c-3.195,0.937-5.389,3.868-5.389,7.197v1.63H103    V173.561z M234.1,257.93v107.62h-17.5V257.93H234.1z M130.1,242.93v-15.884l67.5-19.8l67.5,19.8v15.884H130.1z M178.6,257.93    v107.62h-17.5V257.93H178.6z M15,238.061h100.1v12.37c0,4.142,3.358,7.5,7.5,7.5h0.5v107.62H15V238.061z M138.1,365.55V257.93h8    v107.62H138.1z M193.6,365.55V257.93h8v107.62H193.6z M249.1,365.55V257.93h8v107.62H249.1z M379.48,365.55H272.1V257.93h0.5    c4.142,0,7.5-3.358,7.5-7.5v-12.37h99.38V365.55z"/>
+              <path d="M61.1,246.287c-11.855,0-21.5,9.645-21.5,21.5v21c0,4.142,3.358,7.5,7.5,7.5h28c4.142,0,7.5-3.358,7.5-7.5v-21    C82.6,255.932,72.955,246.287,61.1,246.287z M67.6,281.287h-13v-13.5c0-3.584,2.916-6.5,6.5-6.5s6.5,2.916,6.5,6.5V281.287z"/>
+              <path d="M61.1,303.287c-11.855,0-21.5,9.645-21.5,21.5v21c0,4.142,3.358,7.5,7.5,7.5h28c4.142,0,7.5-3.358,7.5-7.5v-21    C82.6,312.932,72.955,303.287,61.1,303.287z M67.6,338.287h-13v-13.5c0-3.584,2.916-6.5,6.5-6.5s6.5,2.916,6.5,6.5V338.287z"/>
+              <path d="M320.1,296.287h28c4.142,0,7.5-3.358,7.5-7.5v-21c0-11.855-9.645-21.5-21.5-21.5s-21.5,9.645-21.5,21.5v21    C312.6,292.93,315.958,296.287,320.1,296.287z M327.6,267.787c0-3.584,2.916-6.5,6.5-6.5s6.5,2.916,6.5,6.5v13.5h-13V267.787z"/>
+              <path d="M320.1,353.287h28c4.142,0,7.5-3.358,7.5-7.5v-21c0-11.855-9.645-21.5-21.5-21.5s-21.5,9.645-21.5,21.5v21    C312.6,349.93,315.958,353.287,320.1,353.287z M327.6,324.787c0-3.584,2.916-6.5,6.5-6.5s6.5,2.916,6.5,6.5v13.5h-13V324.787z"/>
+            </g>
+          </g>
+        </svg>
+      </span>
+      White Palace Hall 
+    </p>
+
+<!-- ------------------------------------------------------------ -->
+
+    <div class="countdown-container">
+      <div class="circle">
+        <span id="days">0</span>
+        <label>Days</label>
+      </div>
+      <div class="circle">
+        <span id="hours">0</span>
+        <label>Hours</label>
+      </div>
+      <div class="circle">
+        <span id="minutes">0</span>
+        <label>Minutes</label>
+      </div>
+      <div class="circle">
+        <span id="seconds">0</span>
+        <label>Seconds</label>
+      </div>
+    </div>
+<!-- ------------------------------------------------------------ -->
+    <div style="margin: 0px 5px;" class="actions fade-slide">
+      <button onclick="window.open('https://www.google.com/maps/place/%D8%B4%D8%A8%D9%8A%D9%86+%D8%A7%D9%84%D9%83%D9%88%D9%85+%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%89%E2%80%AD/@30.5513075,31.0178283,19z', '_blank')">
+        <i class="fa-solid fa-location-dot"></i>
+      </button>
+      <button onclick="window.open('https://www.facebook.com/share/1BqT1uwsJY/', '_blank')">
+        <i class="fa-brands fa-instagram"></i>
+      </button>
+      <button onclick="window.open('https://www.facebook.com/share/1BqT1uwsJY/', '_blank')">
+        <i class="fa-brands fa-facebook"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- <audio id="wedding-audio" autoplay loop hidden>
+    <source src="wedding.mp3" type="audio/mpeg" />
+  </audio> -->
+
+  <script>
+    const video = document.getElementById('weddingVideo');
+    const sources = ['assets/video1.mp4', 'assets/video2.mp4', 'assets/video3.mp4'];
+    let current = 0;
+
+    function toggleVideo() {
+      current = (current + 1) % sources.length;
+      video.src = sources[current];
+      video.load();
+      video.play();
+    }
+  // ---------------------
+    const canvas = document.getElementById('fireworksCanvas');
+    const ctx = canvas.getContext('2d');
+    let fireworks = [];
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+
+    function random(min, max) {
+      return Math.random() * (max - min) + min;
+    }
+
+    class Firework {
+      constructor() {
+        this.x = random(0, canvas.width);
+        this.y = canvas.height;
+        this.targetY = random(100, canvas.height / 2);
+        this.color = `hsl(${random(0, 360)}, 100%, 60%)`;
+        this.radius = 2;
+        this.particles = [];
+        this.exploded = false;
+        this.speed = 4;
+      }
+
+      update() {
+        if (!this.exploded) {
+          this.y -= this.speed;
+          if (this.y <= this.targetY) {
+            this.explode();
+            this.exploded = true;
+          }
+        } else {
+          this.particles.forEach(p => p.update());
+          this.particles = this.particles.filter(p => p.alpha > 0);
+        }
+      }
+
+      draw() {
+        if (!this.exploded) {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+          ctx.fillStyle = this.color;
+          ctx.fill();
+        } else {
+          this.particles.forEach(p => p.draw());
+        }
+      }
+
+      explode() {
+        for (let i = 0; i < 100; i++) {
+          this.particles.push(new Particle(this.x, this.y, this.color));
+        }
+      }
+    }
+
+    class Particle {
+      constructor(x, y, color) {
+        this.x = x;
+        this.y = y;
+        this.color = color;
+        this.radius = 2;
+        this.alpha = 1;
+        this.angle = random(0, Math.PI * 2);
+        this.speed = random(1, 6);
+        this.friction = 0.98;
+        this.gravity = 0.1;
+      }
+
+      update() {
+        this.speed *= this.friction;
+        this.x += Math.cos(this.angle) * this.speed;
+        this.y += Math.sin(this.angle) * this.speed + this.gravity;
+        this.alpha -= 0.015;
+      }
+
+      draw() {
+        ctx.save();
+        ctx.globalAlpha = this.alpha;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+        ctx.restore();
+      }
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+      ctx.fillStyle = "rgba(0, 0, 0, 0.15)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      fireworks.forEach(f => {
+        f.update();
+        f.draw();
+      });
+
+      fireworks = fireworks.filter(f => f.particles.length > 0 || !f.exploded);
+    }
+
+    function launchFirework() {
+      fireworks.push(new Firework());
+    }
+
+    // ابدأ الألعاب النارية كل ثانية بعد العد التنازلي
+    function startFireworks() {
+      setInterval(launchFirework, 800);
+      animate();
+    }
+
+    // مثال: تشغيل الألعاب النارية بعد 5 ثوانٍ
+    setTimeout(startFireworks, 3000);
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
