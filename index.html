@@ -56,7 +56,7 @@
    
     </div>
     <div class="video-toggle">
-      <button onclick="toggleVideo()"><i class="fa-solid fa-repeat spiner"></i></button>
+      <button onclick="playNextVideo()"><i class="fa-solid fa-repeat spiner"></i></button>
     </div>
   
     <p class="fade-slide" style="color: white; margin-top: 5px;">The Wedding of</p>
@@ -123,15 +123,26 @@
 
   <script>
     const video = document.getElementById('weddingVideo');
-    const sources = ['assets/video1.mp4', 'assets/video2.mp4'];
+    const sources = ['assets/video1.mp4', 'assets/video2.mp4', 'assets/video3.mp4'];
     let current = 0;
 
-    function toggleVideo() {
-      current = (current + 1) % sources.length;
-      video.src = sources[current];
-      video.load();
-      video.play();
+    // function playNextVideo() {
+    //   current = (current + 1) % sources.length;
+    //   video.src = sources[current];
+    //   video.load();
+    //   video.play();
+    // }
+    function playNextVideo() {
+      current++;
+      if (current < sources.length) {
+        video.src = sources[current];
+        video.load();
+        video.play();
+      } else {
+        console.log("تم تشغيل كل الفيديوهات.");
+      }
     }
+    video.addEventListener('ended', playNextVideo);
 
 
   // ---------------------
